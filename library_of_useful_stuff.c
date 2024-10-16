@@ -2,8 +2,7 @@
 
 int universal_get_char()
 {
-    FILE * ptr = freopen(NULL, "rb", stdin);
-    int response = fgetc(ptr);
-    fclose(ptr);
+    fflush(stdin);
+    int response = getchar();
     return response;
 }
