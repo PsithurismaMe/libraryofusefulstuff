@@ -11,4 +11,7 @@ void clear_console();
 // Does the same thing as strncmp except for integer arrays.
 int int_array_cmp(int * a, int * b, size_t size);
 
+// No comment
+int numeric_char_to_int(int c);
+
 #endif

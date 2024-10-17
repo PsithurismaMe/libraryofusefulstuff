@@ -4,12 +4,13 @@ int universal_get_char()
 {
     fflush(stdin);
     int response = getchar();
+    getchar();
     return response;
 }
 
 void clear_console()
 {
-    for (int i = 0; i < 1000; i++)
+    for (int i = 0; i < 10; i++)
     {
         printf("\n");
     }
@@ -29,3 +30,14 @@ int int_array_cmp(int * a, int * b, size_t size)
     return is_same;
 }
 
+int numeric_char_to_int(int c)
+{
+    if (c >= '0' && c <= '9')
+    {
+        return c-48;
+    }
+    else
+    {
+        return -1;
+    }
+}
